@@ -1,3 +1,4 @@
+google.com, pub-3857459787368021, DIRECT, f08c47fec0942fa0
 pubnative.net, 1009966, RESELLER, d641df8625486a7b
 pubnative.net, 1009458, RESELLER, d641df8625486a7b
 toponad.com, 165535463cfb70, RESELLER, 1d49fe424a1a456d
