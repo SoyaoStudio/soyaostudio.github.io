@@ -1,4 +1,4 @@
-# Google AdMob
+#AdMob
 google.com, pub-3857459787368021, DIRECT, f08c47fec0942fa0
 
 #Unity
