@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>SoyaO Studio - NeoRun</title>
+  <title>Soyao Studio - NeoRun</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,8 +12,15 @@
       margin: 0;
       padding: 0;
     }
+    header {
+      padding: 40px 0 20px;
+    }
+    header img {
+      max-width: 200px;
+      border-radius: 10px;
+    }
     h1 {
-      margin-top: 60px;
+      margin-top: 20px;
       font-size: 2.5em;
       color: #ff4c60;
     }
@@ -21,6 +28,21 @@
       font-size: 1.2em;
       margin: 20px auto;
       max-width: 600px;
+    }
+    .trailer {
+      margin: 40px 0;
+    }
+    .trailer a {
+      display: inline-block;
+      background: #ffcc00;
+      color: #111;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .trailer a:hover {
+      background: #ffaa00;
     }
     footer {
       background-color: #111;
@@ -46,15 +68,27 @@
   </style>
 </head>
 <body>
-  <h1>Bienvenido a NeoRun</h1>
-  <p>Este es el sitio oficial de la aplicación NeoRun, desarrollado por SoyaO Studio.</p>
+  <header>
+    <!-- Logo -->
+    <img src="logo.png" alt="Logo NeoRun">
+    <h1>Bienvenido a NeoRun</h1>
+  </header>
+
+  <p>Este es el sitio oficial de NeoRun, desarrollado por Soyao Studio.</p>
+
+  <!-- Botón al tráiler -->
+  <div class="trailer">
+    <a href="https://www.youtube.com/@SoyaoStudio" target="_blank">
+      Ver tráiler en YouTube
+    </a>
+  </div>
 
   <footer>
     <div>
       <a href="privacy-policy.html">Política de Privacidad</a> |
       <a href="terms.html">Términos del Servicio</a>
     </div>
-    <p>© 2026 SoyaO Studio. Todos los derechos reservados.</p>
+    <p>© 2026 Soyao Studio. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
