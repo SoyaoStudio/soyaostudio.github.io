@@ -15,9 +15,14 @@
     header {
       padding: 40px 0 20px;
     }
-    header img {
+    header img.logo {
       max-width: 200px;
       border-radius: 10px;
+    }
+    header img.banner {
+      max-width: 100%;
+      margin-top: 20px;
+      border-radius: 8px;
     }
     h1 {
       margin-top: 20px;
@@ -29,8 +34,21 @@
       margin: 20px auto;
       max-width: 600px;
     }
-    .trailer {
+    .social a {
+      color: #ffcc00;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    .social a:hover {
+      text-decoration: underline;
+    }
+    .video {
       margin: 40px 0;
+    }
+    .video iframe {
+      max-width: 90%;
+      border-radius: 10px;
     }
     .trailer a {
       display: inline-block;
@@ -70,17 +88,28 @@
 <body>
   <header>
     <!-- Logo -->
-    <img src="logo.png" alt="Logo NeoRun">
+    <img src="logo.png" alt="Logo NeoRun" class="logo">
     <h1>Bienvenido a NeoRun</h1>
+    <p>Este es el sitio oficial de NeoRun, desarrollado por Soyao Studio.</p>
+    <!-- Banner -->
+    <img src="banner.png" alt="Banner NeoRun" class="banner">
+    <!-- Botones de redes -->
+    <div class="social">
+  <a href="https://www.youtube.com/@SoyaoStudio" target="_blank">YouTube</a> |
+  <a href="https://www.facebook.com/profile.php?id=61573257776209" target="_blank">Facebook</a> |
+  <a href="https://www.instagram.com/soyaostudio/" target="_blank">Instagram</a> |
+</div>
   </header>
 
-  <p>Este es el sitio oficial de NeoRun, desarrollado por Soyao Studio.</p>
-
-  <!-- Botón al tráiler -->
-  <div class="trailer">
-    <a href="https://www.youtube.com/@SoyaoStudio" target="_blank">
-      Ver tráiler en YouTube
-    </a>
+  <!-- Reproductor del tráiler -->
+  <div class="video">
+    <iframe width="560" height="315" 
+      src="https://www.youtube.com/watch?v=7ZchepCSONU" 
+      title="Tráiler NeoRun" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
   </div>
 
   <footer>
@@ -88,7 +117,7 @@
       <a href="privacy-policy.html">Política de Privacidad</a> |
       <a href="terms.html">Términos del Servicio</a>
     </div>
-    <p>© 2026 Soyao Studio. Todos los derechos reservados.</p>
+    <p>©2026 Soyao Studio. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
