@@ -15,7 +15,7 @@
     header {
       position: relative;
       width: 100%;
-      height: 400px;
+      height: 500px;
       overflow: hidden;
     }
     header img.banner {
@@ -34,7 +34,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      padding-top: 80px;
+      padding-top: 120px;
       background: rgba(0,0,0,0.4);
       color: #fff;
     }
@@ -60,6 +60,19 @@
     }
     .social a:hover {
       text-decoration: underline;
+    }
+    .download a {
+      display: inline-block;
+      margin-top: 20px;
+      background: #00c853;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .download a:hover {
+      background: #009624;
     }
     .video {
       margin: 40px 0;
@@ -95,9 +108,7 @@
 </head>
 <body>
   <header>
-    <!-- Banner de fondo -->
     <img src="banner.jpg" alt="Banner NeoRun" class="banner">
-    <!-- Contenido sobrepuesto -->
     <div class="overlay">
       <img src="logo.png" alt="Logo NeoRun" class="logo">
       <h1>Bienvenido a NeoRun</h1>
@@ -107,10 +118,15 @@
         <a href="https://www.facebook.com/profile.php?id=61573257776209" target="_blank">Facebook</a> |
         <a href="https://www.instagram.com/soyaostudio/" target="_blank">Instagram</a>
       </div>
+      <!-- Botón de descarga -->
+      <div class="download">
+        <a href="https://play.google.com/store/apps/details?id=com.SoyaoStudio.NeoRun" target="_blank">
+          Descargar en Google Play
+        </a>
+      </div>
     </div>
   </header>
 
-  <!-- Reproductor del tráiler -->
   <div class="video">
     <iframe 
       src="https://www.youtube.com/embed/7ZchepCSONU" 
