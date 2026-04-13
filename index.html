@@ -8,33 +8,48 @@
       font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #1e1e2f, #3a3a5c);
       color: #f0f0f0;
-      text-align: center;
       margin: 0;
       padding: 0;
+      text-align: center;
     }
     header {
-      padding: 40px 0 20px;
-    }
-    header img.logo {
-      max-width: 200px;
-      border-radius: 10px;
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
     }
     header img.banner {
-      display: block;
       width: 100%;
-      height: auto;
-      margin: 20px auto;
-      border-radius: 8px;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
-    h1 {
-      margin-top: 20px;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.4);
+      color: #fff;
+    }
+    .overlay img.logo {
+      max-width: 150px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .overlay h1 {
       font-size: 2.5em;
       color: #ff4c60;
+      margin: 10px 0;
     }
-    p {
+    .overlay p {
       font-size: 1.2em;
-      margin: 20px auto;
-      max-width: 600px;
+      margin: 10px 0;
     }
     .social a {
       color: #ffcc00;
@@ -79,17 +94,18 @@
 </head>
 <body>
   <header>
-    <!-- Logo -->
-    <img src="logo.png" alt="Logo NeoRun" class="logo">
-    <h1>Bienvenido a NeoRun</h1>
-    <!-- Banner debajo del título -->
+    <!-- Banner de fondo -->
     <img src="banner.jpg" alt="Banner NeoRun" class="banner">
-    <p>Sitio oficial desarrollado por Soyao Studio.</p>
-    <!-- Botones de redes -->
-    <div class="social">
-      <a href="https://www.youtube.com/@SoyaoStudio" target="_blank">YouTube</a> |
-      <a href="https://www.facebook.com/profile.php?id=61573257776209" target="_blank">Facebook</a> |
-      <a href="https://www.instagram.com/soyaostudio/" target="_blank">Instagram</a>
+    <!-- Contenido sobrepuesto -->
+    <div class="overlay">
+      <img src="logo.png" alt="Logo NeoRun" class="logo">
+      <h1>Bienvenido a NeoRun</h1>
+      <p>Sitio oficial desarrollado por Soyao Studio.</p>
+      <div class="social">
+        <a href="https://www.youtube.com/@SoyaoStudio" target="_blank">YouTube</a> |
+        <a href="https://www.facebook.com/profile.php?id=61573257776209" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/soyaostudio/" target="_blank">Instagram</a>
+      </div>
     </div>
   </header>
 
