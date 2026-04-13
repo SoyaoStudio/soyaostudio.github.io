@@ -20,8 +20,10 @@
       border-radius: 10px;
     }
     header img.banner {
-      max-width: 100%;
-      margin-top: 20px;
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 20px auto;
       border-radius: 8px;
     }
     h1 {
@@ -47,20 +49,10 @@
       margin: 40px 0;
     }
     .video iframe {
-      max-width: 90%;
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
       border-radius: 10px;
-    }
-    .trailer a {
-      display: inline-block;
-      background: #ffcc00;
-      color: #111;
-      padding: 12px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .trailer a:hover {
-      background: #ffaa00;
     }
     footer {
       background-color: #111;
@@ -90,28 +82,27 @@
     <!-- Logo -->
     <img src="logo.png" alt="Logo NeoRun" class="logo">
     <h1>Bienvenido a NeoRun</h1>
-    <p>Sitio oficial de NeoRun, desarrollado por Soyao Studio.</p>
-    <!-- Banner -->
+    <!-- Banner debajo del título -->
     <img src="banner.jpg" alt="Banner NeoRun" class="banner">
+    <p>Sitio oficial desarrollado por Soyao Studio.</p>
     <!-- Botones de redes -->
     <div class="social">
-  <a href="https://www.youtube.com/@SoyaoStudio" target="_blank">YouTube</a> |
-  <a href="https://www.facebook.com/profile.php?id=61573257776209" target="_blank">Facebook</a> |
-  <a href="https://www.instagram.com/soyaostudio/" target="_blank">Instagram</a> |
-</div>
+      <a href="https://www.youtube.com/@SoyaoStudio" target="_blank">YouTube</a> |
+      <a href="https://www.facebook.com/profile.php?id=61573257776209" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com/soyaostudio/" target="_blank">Instagram</a>
+    </div>
   </header>
 
   <!-- Reproductor del tráiler -->
   <div class="video">
-  <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/7ZchepCSONU" 
-    title="Tráiler NeoRun" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-  </iframe>
-</div>
-
+    <iframe 
+      src="https://www.youtube.com/embed/7ZchepCSONU" 
+      title="Tráiler NeoRun" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
 
   <footer>
     <div>
